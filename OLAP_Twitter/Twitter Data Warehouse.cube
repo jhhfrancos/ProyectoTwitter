@@ -1,0 +1,497 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9da87f16-5f57-4155-84b4-87f27ee4ee07" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Twitter Data Warehouse</ID>
+  <Name>Twitter Data Warehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7296" scrolltop="2236" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="18997" y="11192" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tweet" left="11280" top="2236" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4128" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00002010000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Tweet" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Place" left="1152" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Place" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="1542" top="4852" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserT" left="5559" top="10620" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="5265" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009114000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_UserT" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3852" top="2236" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="7728" height="1811" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Place1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="23" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4152" y="3647" />
+              <point x="7716" y="3647" />
+              <point x="7716" y="2536" />
+              <point x="11280" y="2536" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7792" top="6936" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="4202" height="4184" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_User]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="8" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8191" y="10620" />
+              <point x="8191" y="7636" />
+              <point x="11694" y="7636" />
+              <point x="11694" y="7236" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4242" top="4589" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="7338" height="2647" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="11" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4542" y="4988" />
+              <point x="10698" y="4988" />
+              <point x="10698" y="6936" />
+              <point x="11280" y="6936" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Entitie" left="13162" top="10858" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3387" height="2787" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000e30a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Entitie" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13455" top="6737" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="839" height="4421" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Entitie_Tweet]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="8" sourceattachpoint="9" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13894" y="7236" />
+              <point x="13894" y="9047" />
+              <point x="13755" y="9047" />
+              <point x="13755" y="10858" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7296</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>2236</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>1152</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ea1428e1-c1fe-4239-ae07-d8a07096fb80">
+      <ID>Place</ID>
+      <Name>Place</Name>
+      <DimensionID>Place</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="08e7b742-3de6-419a-bd83-15e9cb872d9b">
+          <AttributeID>Id Place</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c726983-3534-4f85-8b2e-d48c93b997d7">
+          <AttributeID>Name Place</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="670efe8b-ebd0-405c-ab8e-ca1dc6ec71cc">
+          <AttributeID>Country Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94ee3250-941f-4291-867b-02d8a060469a">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f2bfab2d-a8f4-45aa-80ec-96ec5ef32751">
+          <AttributeID>Place Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="801455da-f8eb-4b76-bb99-5e3e84074d3d">
+          <AttributeID>Full Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a962e238-d8b4-4b2e-b00d-d0cec951a136">
+      <ID>User T</ID>
+      <Name>User T</Name>
+      <DimensionID>User T</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="12f16bce-6500-4adb-bda4-8aa519a720e3">
+          <AttributeID>Id User</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a1b0e52b-fbb7-457c-8106-71a3d04ef849">
+          <AttributeID>Name User</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5dfbdadb-e4f8-4001-ba36-8894b246d6c4">
+          <AttributeID>Screen Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51f4b482-5867-4ad6-95b8-493cb2e79e54">
+          <AttributeID>Location</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91acfb37-3602-42e6-8032-7c81289830f9">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="943187fb-2acc-4f66-ace7-4e13b33fd5d0">
+          <AttributeID>Followers Count</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c5e7b429-db92-40d2-96d5-7eaa6cd4459c">
+          <AttributeID>Friends Count</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0d53cf1-b978-40f5-aec9-0d9c377a9ab3">
+          <AttributeID>Favourites Count</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7f5ae202-cacf-4407-a4fe-0bad5cb46302">
+          <AttributeID>Statuses Count</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5607588d-1c07-4f33-ac0a-222e915c4536">
+          <AttributeID>Is Geo Enabled</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="dc799f31-b10d-4a7f-9128-9c8753a3846f">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="46dbc1fa-0910-41eb-912c-ea84335ac01e">
+          <AttributeID>Id Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a272eddd-8841-414a-88c1-26f6eb46f649">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c9b67135-0537-415a-9981-984debaf1da9">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29bb3846-5e55-4c24-a00b-b001b58b534f">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7fcab53e-0997-4f9d-9f8f-d382ea6b5bce">
+          <AttributeID>Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6270179-6bce-4d65-b245-44eeb0fddbfd">
+          <AttributeID>Complete Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="783ec88c-b203-4ace-a280-dcd3df16e283">
+      <ID>Entitie</ID>
+      <Name>Entitie</Name>
+      <DimensionID>Entitie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4f345df8-288d-4db7-8ee0-1b7d85d9cde6">
+          <AttributeID>Id Entitie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56d2fd9e-5bc7-40df-9413-79ae01da714c">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="f0869c30-9b87-4175-8725-8e22f9916540">
+      <ID>Tweet</ID>
+      <Name>Tweet</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e6c1a8b6-4b14-4e02-9420-f39c12745e75">
+          <ID>In Reply To Status Id</ID>
+          <Name>In Reply To Status Id</Name>
+          <Source dwd:design-time-name="1514e364-88e3-458d-b530-bce1bcfc1927">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5d117690-1a78-4b52-bcb1-530549e89846">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>inReplyToStatusId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e2442487-adc7-487e-ac3f-da23220ed5e2">
+          <ID>In Reply To User Id</ID>
+          <Name>In Reply To User Id</Name>
+          <Source dwd:design-time-name="bb12c0ed-f305-4532-a3f4-ed03f9c713ae">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e6d4aeb5-ec13-412d-9eec-937e19ecd276">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>inReplyToUserId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b72fa292-e020-46ec-84aa-28ad87bb870e">
+          <ID>Favorite Count</ID>
+          <Name>Favorite Count</Name>
+          <Source dwd:design-time-name="f5e9df8c-ebc6-4fa8-85f6-dd60a277e1a8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0e74c33e-e1c8-447c-a1c2-42f07b388d0c">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>favoriteCount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c3201b97-90f6-40dd-97e2-7d7ce19a77bb">
+          <ID>Retweet Count</ID>
+          <Name>Retweet Count</Name>
+          <Source dwd:design-time-name="6600e1cb-4f80-427b-a285-5e59ab4e29ea">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d2569c16-15f9-4f8d-92bc-d31d3119a218">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>retweetCount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fbb29b96-d89c-414a-9446-ebc3c930a790">
+          <ID>Quoted Status Id</ID>
+          <Name>Quoted Status Id</Name>
+          <Source dwd:design-time-name="fde779af-679f-4bb3-8ba4-c77e3bde3290">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f9b8fa59-36da-4c88-97bb-617cb000a8ca">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>quotedStatusId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4fe7a414-b8f8-4024-aacb-ae5cc316140b">
+          <ID>Id Retweet</ID>
+          <Name>Id Retweet</Name>
+          <Source dwd:design-time-name="8bd08d35-51e1-484d-b352-a4291d108d50">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9e8a3d98-e66c-46d7-a03b-59cd451d1a0b">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>idRetweet</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="74d3c64f-ff18-4314-afe5-74ed2180f53c">
+          <ID>Id Quoted</ID>
+          <Name>Id Quoted</Name>
+          <Source dwd:design-time-name="d4cc25f8-91f6-4661-86a2-1e7ac052c6a3">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b7fb600-26ea-4a79-9932-67572c72d71e">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>idQuoted</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f91be29e-948b-4b26-bccf-fa585a16a082">
+          <ID>Media Count</ID>
+          <Name>Media Count</Name>
+          <Source dwd:design-time-name="339cb867-1d7a-4080-a0b3-80c4a6b83cd0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c4a9ed25-2fc2-4bd6-8d0e-bc595413fead">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>mediaCount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f5d9ec44-f8c7-4884-8ded-5affa4c411b9">
+          <ID>Mentions Count</ID>
+          <Name>Mentions Count</Name>
+          <Source dwd:design-time-name="a2429575-101e-43fa-86d3-717d28de1ede">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="20f7daaf-5155-43af-ba8c-557741e4a3d1">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>mentionsCount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d3e8f511-6ad5-4450-9dd1-9e4f425385a9">
+          <ID>Hashtag Count</ID>
+          <Name>Hashtag Count</Name>
+          <Source dwd:design-time-name="10a252c8-55c7-477b-bd64-22870c5bb359">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fc86b94a-9c5f-4313-b680-12c7dd12e376">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>hashtagCount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="16d15600-7b98-4998-aa0c-ae7240d5ae4f">
+          <ID>Recuento Tweet</ID>
+          <Name>Recuento Tweet</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="70a12dfb-876c-45c4-9875-55a669d28bfb">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="db3e0c4b-2e06-4b16-a7dd-b2e2e484d3a9">
+              <TableID>dbo_Tweet</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9f790528-d0b4-4d16-9d17-5c69d89530e9">
+          <CubeDimensionID>Place</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8baed128-29d3-4f4b-b113-8e27917728c1">
+              <AttributeID>Id Place</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f2e64a41-bc6b-4c18-a4e4-e7d1e210153c">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c053b3d5-a18f-46a0-8b8a-958af632db9b">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>idPlaceTweet</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5a4f44d8-e057-49ff-8718-d78aea416929">
+          <CubeDimensionID>User T</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b6b15931-f187-431f-9bf4-7c4ed26e16ad">
+              <AttributeID>Id User</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e9522ed3-ca19-4b09-99ec-1999cef8b8bd">
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d415075b-4f89-49ed-97e3-b1b278ea061e">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>idUserTweet</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4e03b281-5645-40a5-a524-7d93a6c26511">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65788f96-1ca6-462c-bd2f-21fd7b559564">
+              <AttributeID>Id Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9d8677fa-688f-4c25-9ccf-ff3357a2aa50">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="300b7e45-b279-41da-a0b5-67d62b4ebde2">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>idDateTweet</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="59c15e8e-a89b-4571-90be-c00ffd1380d7">
+    <DataSourceViewID>Twitter Data Warehouse</DataSourceViewID>
+  </Source>
+</Cube>

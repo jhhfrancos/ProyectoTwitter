@@ -1,0 +1,328 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80d44b1b-c635-4bcb-bef8-46a5307696c7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Twitter Data Warehouse</ID>
+  <Name>Twitter Data Warehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Twitter Data Warehouse</DataSourceID>
+  <Schema>
+    <xs:schema id="Twitter_x0020_Data_x0020_Warehouse" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Twitter_x0020_Data_x0020_Warehouse" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="0cded328-b30d-4e63-89af-7ac22afeb99f">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Date" msprop:design-time-name="cb6d3fde-bb79-4cb4-8acb-e111597fad87" msprop:DbTableName="Date" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idDate" msprop:design-time-name="32859dc8-1a21-45b4-a145-d10571e63c13" msprop:DbColumnName="idDate" msprop:FriendlyName="idDate" type="xs:int" />
+                  <xs:element name="year" msprop:design-time-name="b1ac53a4-3cef-4aed-83c3-17c18f5270a3" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" />
+                  <xs:element name="month" msprop:design-time-name="b167baf8-b68f-4274-aec3-38ae12b9ea8c" msprop:DbColumnName="month" msprop:FriendlyName="month" type="xs:int" />
+                  <xs:element name="day" msprop:design-time-name="79165ae7-e2de-4c17-8ed0-508f120992ac" msprop:DbColumnName="day" msprop:FriendlyName="day" type="xs:int" />
+                  <xs:element name="hour" msprop:design-time-name="c9890c3f-8526-47a7-81b0-601ded3ca12e" msprop:DbColumnName="hour" msprop:FriendlyName="hour" type="xs:int" />
+                  <xs:element name="completeDate" msprop:design-time-name="2894e708-3201-4a62-8703-a0b42007c647" msprop:DbColumnName="completeDate" msprop:FriendlyName="completeDate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Entitie" msprop:design-time-name="914f650c-1475-47f7-af13-47b04db9a399" msprop:DbTableName="Entitie" msprop:FriendlyName="Entitie" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idEntitie" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="320cbc56-38df-4b2b-a39c-ed5fcdbf2272" msprop:DbColumnName="idEntitie" msprop:FriendlyName="idEntitie" type="xs:long" />
+                  <xs:element name="Name" msprop:design-time-name="aee48300-775a-4c00-8ddf-157c66719e50" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Type" msprop:design-time-name="ebaffe40-2fd7-4f18-952d-3c6a09b28f43" msprop:DbColumnName="Type" msprop:FriendlyName="Type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="idTweetEntitie" msprop:design-time-name="3594fc87-d2aa-4834-b4ff-f744c5c9f4a5" msprop:DbColumnName="idTweetEntitie" msprop:FriendlyName="idTweetEntitie" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Place" msprop:design-time-name="c1d298c0-958d-49aa-b00c-d381ab70b55d" msprop:DbTableName="Place" msprop:FriendlyName="Place" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="namePlace" msprop:design-time-name="613dee75-9af0-4745-8e2e-82034c64ae24" msprop:DbColumnName="namePlace" msprop:FriendlyName="namePlace" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="countryCode" msprop:design-time-name="5efb5950-3994-46d7-a2e5-c775ae902f92" msprop:DbColumnName="countryCode" msprop:FriendlyName="countryCode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="idPlace" msprop:design-time-name="5e9732d1-0e40-4877-8ddc-acf738237ca6" msprop:DbColumnName="idPlace" msprop:FriendlyName="idPlace">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country" msprop:design-time-name="90d4cc60-fc58-4dce-873d-5d6a53a0eca7" msprop:DbColumnName="country" msprop:FriendlyName="country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="placeType" msprop:design-time-name="bf16bd31-2df7-4903-ad36-692b5b3aa553" msprop:DbColumnName="placeType" msprop:FriendlyName="placeType" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="urlPlace" msprop:design-time-name="48103043-0095-4b49-812c-f042f9d62f5a" msprop:DbColumnName="urlPlace" msprop:FriendlyName="urlPlace" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fullName" msprop:design-time-name="2c20f756-dd24-4f91-a5c6-e15bbcb7a3a4" msprop:DbColumnName="fullName" msprop:FriendlyName="fullName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tweet" msprop:design-time-name="8d1cd76c-6455-4f11-803b-402c390a7780" msprop:DbTableName="Tweet" msprop:FriendlyName="Tweet" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="createdAtTweet" msprop:design-time-name="db821642-4b33-462f-8f1d-b082da26d059" msprop:DbColumnName="createdAtTweet" msprop:FriendlyName="createdAtTweet" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="idTweet" msprop:design-time-name="4fb9e050-dbc4-48c3-b453-9b31c93d2224" msprop:DbColumnName="idTweet" msprop:FriendlyName="idTweet" type="xs:long" />
+                  <xs:element name="text" msprop:design-time-name="0844a50d-146e-4411-808c-d2d8c12b4aa3" msprop:DbColumnName="text" msprop:FriendlyName="text" type="xs:string" minOccurs="0" />
+                  <xs:element name="source" msprop:design-time-name="f4cbf948-ee66-49b7-bc61-39cf51ff15e1" msprop:DbColumnName="source" msprop:FriendlyName="source" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="isTruncated" msprop:design-time-name="e8890998-43e9-4227-892a-27aa6ee6ab40" msprop:DbColumnName="isTruncated" msprop:FriendlyName="isTruncated" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="inReplyToStatusId" msprop:design-time-name="0e2e45f8-813d-4c3f-9d09-0fffcdb71c2a" msprop:DbColumnName="inReplyToStatusId" msprop:FriendlyName="inReplyToStatusId" type="xs:long" minOccurs="0" />
+                  <xs:element name="inReplyToUserId" msprop:design-time-name="77ccb480-9554-4a97-9141-d87b1d946284" msprop:DbColumnName="inReplyToUserId" msprop:FriendlyName="inReplyToUserId" type="xs:long" minOccurs="0" />
+                  <xs:element name="favoriteCount" msprop:design-time-name="11b782b2-015e-4805-897c-3049ee9a9e7a" msprop:DbColumnName="favoriteCount" msprop:FriendlyName="favoriteCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="retweetCount" msprop:design-time-name="4a9c70da-768f-4cbd-a48a-eb2f3acfca1e" msprop:DbColumnName="retweetCount" msprop:FriendlyName="retweetCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="isPossiblySensitive" msprop:design-time-name="791ff993-544e-4856-8dcf-65f52cf01fce" msprop:DbColumnName="isPossiblySensitive" msprop:FriendlyName="isPossiblySensitive" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="lang" msprop:design-time-name="666b3c89-d613-4afa-9aec-1a52320e8c78" msprop:DbColumnName="lang" msprop:FriendlyName="lang" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="quotedStatusId" msprop:design-time-name="0dad872a-e941-4d90-a85d-2b4d89880783" msprop:DbColumnName="quotedStatusId" msprop:FriendlyName="quotedStatusId" type="xs:long" minOccurs="0" />
+                  <xs:element name="inReplyToScreenName" msprop:design-time-name="b012e543-78fa-46fb-b736-eca2778415cc" msprop:DbColumnName="inReplyToScreenName" msprop:FriendlyName="inReplyToScreenName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="idRetweet" msprop:design-time-name="95c8695a-aff2-45f5-aee6-52bdda9b7455" msprop:DbColumnName="idRetweet" msprop:FriendlyName="idRetweet" type="xs:long" minOccurs="0" />
+                  <xs:element name="idQuoted" msprop:design-time-name="ef9dcbab-4af7-41bf-96fa-be5c122335b2" msprop:DbColumnName="idQuoted" msprop:FriendlyName="idQuoted" type="xs:long" minOccurs="0" />
+                  <xs:element name="idUserTweet" msprop:design-time-name="e33c184a-9ff0-4ca6-ad1d-11b557a423ca" msprop:DbColumnName="idUserTweet" msprop:FriendlyName="idUserTweet" type="xs:long" minOccurs="0" />
+                  <xs:element name="idDateTweet" msprop:design-time-name="1f5812e2-5ea7-470e-9f21-b68d025c342c" msprop:DbColumnName="idDateTweet" msprop:FriendlyName="idDateTweet" type="xs:int" minOccurs="0" />
+                  <xs:element name="idPlaceTweet" msprop:design-time-name="19f2eae4-00ce-4abc-8325-14d0a11fac67" msprop:DbColumnName="idPlaceTweet" msprop:FriendlyName="idPlaceTweet" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="mediaCount" msprop:design-time-name="ca1cffe8-edc9-4742-9036-3ca519476430" msprop:DbColumnName="mediaCount" msprop:FriendlyName="mediaCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="mentionsCount" msprop:design-time-name="85442c95-4e54-411d-ae90-a7ff0b6f1813" msprop:DbColumnName="mentionsCount" msprop:FriendlyName="mentionsCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="hashtagCount" msprop:design-time-name="d45a4833-27de-4a0b-8c72-71776e53fed9" msprop:DbColumnName="hashtagCount" msprop:FriendlyName="hashtagCount" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_UserT" msprop:design-time-name="fd4830ff-76f4-4a28-ba17-237b8f95d2ff" msprop:DbTableName="UserT" msprop:FriendlyName="UserT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idUser" msprop:design-time-name="a7118ccc-4fde-4525-bbe8-115c842ab232" msprop:DbColumnName="idUser" msprop:FriendlyName="idUser" type="xs:long" />
+                  <xs:element name="nameUser" msprop:design-time-name="f32a3d11-94c5-4ab5-a947-0a1508938ec7" msprop:DbColumnName="nameUser" msprop:FriendlyName="nameUser" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="screenName" msprop:design-time-name="aec1fdb5-cd24-4b63-bddc-604b82545bef" msprop:DbColumnName="screenName" msprop:FriendlyName="screenName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="location" msprop:design-time-name="15d3f3ef-b6dc-4f8c-8c50-fe8294e56705" msprop:DbColumnName="location" msprop:FriendlyName="location" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="description" msprop:design-time-name="6c8b7f3d-2bf4-40f1-b115-0b49bf64fa94" msprop:DbColumnName="description" msprop:FriendlyName="description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="profileImageUrl" msprop:design-time-name="f005bc68-149b-4623-98d6-b7892f5d33f7" msprop:DbColumnName="profileImageUrl" msprop:FriendlyName="profileImageUrl" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="profileImageUrlHttps" msprop:design-time-name="ed3d9ba3-a3ff-457c-8694-20cde2b5da2d" msprop:DbColumnName="profileImageUrlHttps" msprop:FriendlyName="profileImageUrlHttps" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="urlUser" msprop:design-time-name="2224658a-df54-4024-9a99-522c5e074689" msprop:DbColumnName="urlUser" msprop:FriendlyName="urlUser" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="isProtected" msprop:design-time-name="f42f3971-b977-45dc-b42e-9ab70806e00d" msprop:DbColumnName="isProtected" msprop:FriendlyName="isProtected" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="followersCount" msprop:design-time-name="794857b7-c568-4fac-b39c-90181fa5795b" msprop:DbColumnName="followersCount" msprop:FriendlyName="followersCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="isDefaultProfile" msprop:design-time-name="3cc70f0f-2063-4b51-a79c-eef64274403d" msprop:DbColumnName="isDefaultProfile" msprop:FriendlyName="isDefaultProfile" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="friendsCount" msprop:design-time-name="4f4e23c4-0410-4000-a8fa-c7791505e3c3" msprop:DbColumnName="friendsCount" msprop:FriendlyName="friendsCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="createdAtUser" msprop:design-time-name="35584a8e-ed5f-42b1-b5bf-efee731ab137" msprop:DbColumnName="createdAtUser" msprop:FriendlyName="createdAtUser" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="favouritesCount" msprop:design-time-name="4f42ce78-a698-4bce-8dcb-ba29a64111b0" msprop:DbColumnName="favouritesCount" msprop:FriendlyName="favouritesCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="profileBackgroundImageUrl" msprop:design-time-name="570bf708-d3a2-4edd-b8b2-8d5e05984ab7" msprop:DbColumnName="profileBackgroundImageUrl" msprop:FriendlyName="profileBackgroundImageUrl" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="profileBackgroundImageUrlHttps" msprop:design-time-name="2947dda3-5f78-43eb-9277-5818f87b80c5" msprop:DbColumnName="profileBackgroundImageUrlHttps" msprop:FriendlyName="profileBackgroundImageUrlHttps" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="statusesCount" msprop:design-time-name="e9a76f46-01f6-4c4b-a96b-46a290a8758d" msprop:DbColumnName="statusesCount" msprop:FriendlyName="statusesCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="isGeoEnabled" msprop:design-time-name="e17a7a35-ee1c-4861-b7cc-1c253ee1b84e" msprop:DbColumnName="isGeoEnabled" msprop:FriendlyName="isGeoEnabled" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="isVerified" msprop:design-time-name="6c275536-84fa-4cf3-a462-f886641f3dbb" msprop:DbColumnName="isVerified" msprop:FriendlyName="isVerified" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="listedCount" msprop:design-time-name="629285fa-8b06-48e5-9920-be174c78f056" msprop:DbColumnName="listedCount" msprop:FriendlyName="listedCount" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="idDate" />
+        </xs:unique>
+        <xs:unique name="dbo_Entitie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Entitie" />
+          <xs:field xpath="idEntitie" />
+        </xs:unique>
+        <xs:unique name="dbo_Place_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Place" />
+          <xs:field xpath="idPlace" />
+        </xs:unique>
+        <xs:unique name="dbo_Tweet_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="idTweet" />
+        </xs:unique>
+        <xs:unique name="dbo_UserT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_UserT" />
+          <xs:field xpath="idUser" />
+        </xs:unique>
+        <xs:keyref name="FK_Tweet_Date" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="idDateTweet" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_User" refer="dbo_UserT_Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="idUserTweet" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_Place1" refer="dbo_Place_Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="idPlaceTweet" />
+        </xs:keyref>
+        <xs:keyref name="FK_Entitie_Tweet" refer="dbo_Tweet_Constraint1">
+          <xs:selector xpath=".//dbo_Entitie" />
+          <xs:field xpath="idTweetEntitie" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Twitter_x0020_Data_x0020_Warehouse xmlns="" />
+  </Schema>
+</DataSourceView>

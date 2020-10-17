@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="twitdemo:jar">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="twitdemo.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="twitdemo" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-cli/commons-cli/1.4/commons-cli-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/twitter4j/twitter4j-core/4.0.7/twitter4j-core-4.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

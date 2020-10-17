@@ -1,0 +1,311 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="02d956aa-5b4f-4995-9c9a-4705262282e8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>User T</ID>
+  <Name>User T</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-959" scrolltop="-1192" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7223" y="11192" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserT" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5265" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009114000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_UserT" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-959</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1192</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="20" xmlns="">
+          <Shapes NodeWidth="222">
+            <Shape Id="Id User" Expanded="true">
+              <Attributes>
+                <Attribute Id="Id User" />
+                <Attribute Id="Created At User" />
+                <Attribute Id="Description" />
+                <Attribute Id="Favourites Count" />
+                <Attribute Id="Followers Count" />
+                <Attribute Id="Friends Count" />
+                <Attribute Id="Is Default Profile" />
+                <Attribute Id="Is Geo Enabled" />
+                <Attribute Id="Is Protected" />
+                <Attribute Id="Is Verified" />
+                <Attribute Id="Listed Count" />
+                <Attribute Id="Location" />
+                <Attribute Id="Name User" />
+                <Attribute Id="Profile Background Image Url" />
+                <Attribute Id="Profile Background Image Url Https" />
+                <Attribute Id="Screen Name" />
+                <Attribute Id="Statuses Count" />
+                <Attribute Id="Url User" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7d44e941-0d54-4c38-a6f2-cf5777d6b95c">
+    <DataSourceViewID>Twitter Data Warehouse</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="b4a9ff68-1821-4b36-8ebf-8281767717aa">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="40ac2ff7-9e6a-4a68-8397-590a9ed898bc">
+      <ID>Id User</ID>
+      <Name>Id User</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="766d7c62-3f12-4146-b5f3-fce12846e178">
+          <DataType>BigInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="676b117c-1d7e-4711-b6b6-867282d83a81">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>idUser</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1b892966-7ade-46e7-9be4-ab367bb95e49">
+          <AttributeID>Name User</AttributeID>
+          <Name>Name User</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b6a9bc6e-d92b-4ab1-964b-32f5405196db">
+          <AttributeID>Screen Name</AttributeID>
+          <Name>Screen Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3838905b-ef13-48d1-bee8-41ad33251e3f">
+          <AttributeID>Location</AttributeID>
+          <Name>Location</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e5ae2ab-6e19-472e-bdff-d9732a67b284">
+          <AttributeID>Description</AttributeID>
+          <Name>Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33be86a3-7140-4e8d-9138-a91fece7f383">
+          <AttributeID>Followers Count</AttributeID>
+          <Name>Followers Count</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="edcdc326-7318-4000-b8f0-4da78458866e">
+          <AttributeID>Friends Count</AttributeID>
+          <Name>Friends Count</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d25036c5-1ccf-42ec-973b-80fc310533c0">
+          <AttributeID>Favourites Count</AttributeID>
+          <Name>Favourites Count</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="17da45bf-c374-43ce-b816-095e73d11ee2">
+          <AttributeID>Statuses Count</AttributeID>
+          <Name>Statuses Count</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2fb36026-0a96-424c-aee1-c66eb5da6534">
+          <AttributeID>Is Geo Enabled</AttributeID>
+          <Name>Is Geo Enabled</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac84f04d-0593-4649-825c-53850b358bdb">
+      <ID>Name User</ID>
+      <Name>Name User</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d42f8e65-ce1f-4f9a-8879-f029d953990d">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de8e3d3a-7256-46e8-a024-3b9607aba935">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>nameUser</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d82ea3d7-083d-4944-bf44-fa9a226e4334">
+      <ID>Screen Name</ID>
+      <Name>Screen Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94bdccaa-e38a-455f-93fd-b43bd89bc27a">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f933dc13-d364-46a0-b4b0-3d62ac7db54b">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>screenName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="20a649fc-af39-40ff-bbae-8123741ab63d">
+      <ID>Location</ID>
+      <Name>Location</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d82ae423-a62a-4936-89c3-f934895cf82c">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="853bcf55-8e42-40b9-b83d-9349e3e63a9a">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e3f0e92-c25a-46a7-a095-385e97afa7e2">
+      <ID>Description</ID>
+      <Name>Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="25994186-7ed3-4a53-a990-2b40e1cbf824">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2288824-304a-42f6-9324-deb6dba0a075">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2fc3b48b-f6eb-40ba-b43e-c5b207c5b21a">
+      <ID>Followers Count</ID>
+      <Name>Followers Count</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ddccd8e-5bc6-4092-8c5a-4998e486efb0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3439acbe-862c-4a5a-ad59-5b824cc1e372">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>followersCount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="72289086-14e2-4060-9214-d94234f526b9">
+      <ID>Friends Count</ID>
+      <Name>Friends Count</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8cc2bc37-bea4-4393-af54-831d6c590117">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="176299d0-293a-45d5-bf9b-22c474352305">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>friendsCount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbe8c8b2-ddea-4e3b-a08e-1a704b6890c5">
+      <ID>Favourites Count</ID>
+      <Name>Favourites Count</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="00201603-2367-466d-8bc4-862b376b2f39">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aec1db97-ec96-423d-96d8-184e486dac49">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>favouritesCount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fcc6e56c-050f-4419-903a-4c54f742776c">
+      <ID>Statuses Count</ID>
+      <Name>Statuses Count</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af476ef8-d524-43ed-94fe-59ac2fe2f095">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23cd6b89-2f27-41e5-8de7-49bbe359585e">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>statusesCount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7250df77-2a5c-4fd5-9102-aaba41aceeba">
+      <ID>Is Geo Enabled</ID>
+      <Name>Is Geo Enabled</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59376357-52c8-406a-9fc9-7d87eb0cf7a1">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49f5d361-6268-48e7-8f64-7b462c5bfdff">
+            <TableID>dbo_UserT</TableID>
+            <ColumnID>isGeoEnabled</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

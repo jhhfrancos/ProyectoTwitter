@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>OLAP_Twitter</Database>
+    <Server>JHH-2PC\MSSQLSERVER2</Server>
+    <ConnectionString>Data Source=JHH-2PC\MSSQLSERVER2;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>EUcvtT1mML1LsQKDta0EKFmxPIE=2020-10-15 9:41:58 PM2020-10-15 9:41:58 PM</TimeStamp>
+        <ID>
+          <String>Twitter Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>5nE8XEodiyvYWovedr3of9dY3hA=2020-10-16 8:49:28 AM2020-10-16 8:49:28 AM</TimeStamp>
+        <ID>
+          <String>Twitter Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WySN11qKxljevo3cQtWrBnBunYc=2020-10-16 9:13:26 AM2020-10-16 8:50:00 AM</TimeStamp>
+        <ID>
+          <String>Place</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yXofcDwdP7QM5tx2mXBR0Wlq7Ec=2020-10-16 9:05:29 AM2020-10-16 8:50:00 AM</TimeStamp>
+        <ID>
+          <String>User T</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KOF0XaibKHWGOvoB4lXL1caDE68=2020-10-16 8:55:13 AM2020-10-16 8:50:00 AM</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DZQ35MldDLJSxRu5z5jLz0f54TM=2020-10-16 9:14:57 AM2020-10-16 8:53:39 AM</TimeStamp>
+        <ID>
+          <String>Entitie</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>tj67ztuN+UthiqsN4q+hKahGBP8=2020-10-16 9:14:57 AM2020-10-16 8:50:00 AM9oewaz27ea24n7r8KqLoeWmjZio=2020-10-16 8:50:00 AM2020-10-16 8:50:00 AM</TimeStamp>
+        <ID>
+          <String>Twitter Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Qq1iC2rTS6R5K2MjAqFi21U1xsY=2020-10-15 9:40:06 PM2020-10-15 9:40:02 PM</TimeStamp>
+      <ID>
+        <String>OLAP_Twitter</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-10-16T14:14:58.323333Z</LastDeployed>
+</DeploymentSnapshot>

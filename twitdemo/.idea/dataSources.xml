@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3930068419">
+    <data-source source="LOCAL" name="SQL Server - BDTwitter;integratedSecurity=true@localhost" uuid="6f8194d0-c989-41db-82a7-c0a11e7ef701">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://localhost:1433;databaseName=BDTwitter;integratedSecurity=true</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

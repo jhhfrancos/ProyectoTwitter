@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQL Server - BDTwitter;integratedSecurity=true@localhost" uuid="6f8194d0-c989-41db-82a7-c0a11e7ef701">
+      <secret-storage>master_key</secret-storage>
+      <domain-auth>true</domain-auth>
+      <schema-pattern>BDTwitter.*</schema-pattern>
+      <default-schemas>BDTwitter.*</default-schemas>
+    </data-source>
+  </component>
+</project>

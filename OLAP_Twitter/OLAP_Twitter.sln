@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "OLAP_Twitter", "OLAP_Twitter.dwproj", "{29CB3CB9-A166-4383-8286-48B6511FCF10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29CB3CB9-A166-4383-8286-48B6511FCF10}.Development|Default.ActiveCfg = Development
+		{29CB3CB9-A166-4383-8286-48B6511FCF10}.Development|Default.Build.0 = Development
+		{29CB3CB9-A166-4383-8286-48B6511FCF10}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF7F8E5-EBC7-441F-8B7E-C6E3D9DEA66E}
+	EndGlobalSection
+EndGlobal

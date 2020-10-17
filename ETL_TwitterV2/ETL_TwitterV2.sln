@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ETL_TwitterV2", "ETL_TwitterV2.dtproj", "{329AD983-8624-4C56-932F-5C58D972C377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{329AD983-8624-4C56-932F-5C58D972C377}.Development|Default.ActiveCfg = Development
+		{329AD983-8624-4C56-932F-5C58D972C377}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23607D4E-AC38-4168-9044-01C439B44FD0}
+	EndGlobalSection
+EndGlobal
