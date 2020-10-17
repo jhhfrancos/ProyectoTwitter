@@ -1,0 +1,14 @@
+twitdemo/twitter4j.properties
+twitdemo/data/*
+twitdemo/target/*
+twitdemo/list-test.txt
+twitdemo/list.txt
+twitdemo/twits.txt
+twitdemo/twits.dict
+twitdemo/*.swp
+twitdemo/twits-clean.txt
+twitdemo/data
+twitdemo/DataExample
+twitdemo/list.txt
+twitdemo/listAll.txt
+twitdemo/resultadosRaros.txt
